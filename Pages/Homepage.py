@@ -1,6 +1,6 @@
 class Homepage:
     def __init__(self,page):
-        self.page = page
+        self._page = page
 
     def verifyHomepageTitle(self,expectedTitle):
-        assert self.page.title() == expectedTitle
+        assert self._page.title() == expectedTitle
